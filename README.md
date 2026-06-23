@@ -66,40 +66,6 @@ dimensions. Example (`labels/train/<name>.txt`):
 0 0.294531 0.541667 0.006771 0.011111   # ball
 ```
 
-## 🚀 Quick start
-
-### Train a YOLO model
-
-```bash
-pip install ultralytics
-
-# Train (e.g. YOLO11 nano) — high resolution helps detect the small ball
-yolo detect train data=data.yaml model=yolo11n.pt epochs=100 imgsz=1280
-
-# Validate
-yolo detect val data=data.yaml model=runs/detect/train/weights/best.pt
-```
-
-### Load from Python
-
-```python
-from ultralytics import YOLO
-
-model = YOLO("yolo11n.pt")
-model.train(data="data.yaml", epochs=100, imgsz=1280)
-```
-
-## 💡 Notes & tips
-
-- The **ball** is a small, fast-moving object and is the hardest class to
-  detect — training at a **higher input resolution** (`imgsz=1280` or above)
-  noticeably improves recall.
-- The dataset is **class-imbalanced** (players dominate). Consider techniques
-  such as loss weighting, augmentation, or focal loss if ball/referee recall
-  is critical.
-- All images share the same resolution (1920×1080), so no letterboxing
-  surprises during training.
-
 ## 📜 License
 
 Released under the **[Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE)**
