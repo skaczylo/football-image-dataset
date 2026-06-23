@@ -84,3 +84,8 @@ If you use this dataset in your work, please cite it:
   howpublished = {\url{https://github.com/skaczylo/football-image-dataset}}
 }
 ```
+
+## ⭐ Support
+
+If you find this dataset useful, please consider giving it a **star** on
+GitHub — it helps others discover the project and is greatly appreciated!
