@@ -89,3 +89,10 @@ If you use this dataset in your work, please cite it:
 
 If you find this dataset useful, please consider giving it a **star** on
 GitHub — it helps others discover the project and is greatly appreciated!
+
+---
+
+<sub><b>Keywords:</b> football dataset · soccer dataset · YOLO dataset · object detection ·
+ball detection · player detection · referee detection · sports analytics ·
+computer vision · annotated images · bounding boxes · YOLOv8 · YOLO11 ·
+Ultralytics · deep learning · machine learning · image dataset · training data</sub>
