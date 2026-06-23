@@ -1,0 +1,24 @@
+# Archives / backups (the extracted dataset lives in images/ and labels/)
+*.zip
+custom_dataset*.zip
+
+# YOLO / training artifacts
+runs/
+*.pt
+*.onnx
+*.engine
+*.cache
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

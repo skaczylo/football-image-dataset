@@ -1,0 +1,13 @@
+# Football Image Dataset — Ultralytics YOLO configuration
+# Usage: yolo detect train data=data.yaml model=yolo11n.pt epochs=100 imgsz=1280
+
+path: .                # dataset root (relative to this file)
+train: images/train    # 490 images
+val: images/val        # 122 images
+
+# Classes
+nc: 3
+names:
+  0: ball
+  1: player
+  2: referee
