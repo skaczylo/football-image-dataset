@@ -30,8 +30,7 @@ This dataset contains **612 images** (Full HD, 1920×1080) extracted from footba
 | **val**   |   100  |    83  |   1,566  |    158    |    1,807    |
 | **Total** | **612**| **500**| **8,844**|  **792**  |  **10,136** |
 
-> The validation set is composed of the Roboflow-exported frames (file names containing `.rf.`),
-> while the remaining frames form the training set.
+> The dataset is split into an 84 / 16 train–validation partition (512 / 100 images).
 > One training image is a *background* sample (no objects), which is intentional and helps reduce false positives.
 
 ## 📁 Repository structure
