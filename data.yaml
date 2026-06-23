@@ -2,8 +2,8 @@
 # Usage: yolo detect train data=data.yaml model=yolo11n.pt epochs=100 imgsz=1280
 
 path: .                # dataset root (relative to this file)
-train: images/train    # 490 images
-val: images/val        # 122 images
+train: images/train    # 512 images
+val: images/val        # 100 images
 
 # Classes
 nc: 3

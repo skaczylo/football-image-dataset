@@ -26,23 +26,24 @@ This dataset contains **612 images** (Full HD, 1920×1080) extracted from footba
 
 | Split     | Images | `ball` | `player` | `referee` | Total boxes |
 |-----------|:------:|:------:|:--------:|:---------:|:-----------:|
-| **train** |   490  |   405  |   7,071  |    637    |    8,113    |
-| **val**   |   122  |    95  |   1,773  |    155    |    2,023    |
+| **train** |   512  |   417  |   7,278  |    634    |    8,329    |
+| **val**   |   100  |    83  |   1,566  |    158    |    1,807    |
 | **Total** | **612**| **500**| **8,844**|  **792**  |  **10,136** |
 
-> The split is an 80 / 20 train–validation partition generated deterministically (seed `42`).
-> One image is a *background* sample (no objects), which is intentional and helps reduce false positives.
+> The validation set is composed of the Roboflow-exported frames (file names containing `.rf.`),
+> while the remaining frames form the training set.
+> One training image is a *background* sample (no objects), which is intentional and helps reduce false positives.
 
 ## 📁 Repository structure
 
 ```
 football-image-dataset/
 ├── images/
-│   ├── train/        # 490 .jpg frames
-│   └── val/          # 122 .jpg frames
+│   ├── train/        # 512 .jpg frames
+│   └── val/          # 100 .jpg frames
 ├── labels/
-│   ├── train/        # 490 .txt YOLO annotations
-│   └── val/          # 122 .txt YOLO annotations
+│   ├── train/        # 512 .txt YOLO annotations
+│   └── val/          # 100 .txt YOLO annotations
 ├── data.yaml         # Ultralytics dataset configuration
 ├── LICENSE           # CC BY 4.0
 └── README.md
